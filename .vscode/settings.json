@@ -1,0 +1,8 @@
+{
+  "window.zoomLevel": 1,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "editor.renderLineHighlight": "none",
+  "dimmer.enabled": false,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.debug.settings.onBuildFailureProceed": true
+}
