@@ -9,7 +9,7 @@ public class TestLaunchBrowser {
     @Test
     void testLaunchBrowser() {
         WebDriver driver = new ChromeDriver();
-        System.out.println();
+        System.out.println(driver);
         driver.quit();
     }
 }
