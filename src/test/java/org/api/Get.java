@@ -1,5 +1,6 @@
 package org.api;
 
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import io.github.cdimascio.dotenv.Dotenv;
@@ -19,6 +20,8 @@ public class Get {
         .then()
         .log().all()
         .assertThat()
-        .statusCode(200);
+        .statusCode(200)
+        .body("workspaces.name", Matchers.hasItems("My Workspace", "Learn"))
+        .body("workspaces.type", Matchers.hasItems("personal", "personal"));
   }
 }
